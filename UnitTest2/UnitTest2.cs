@@ -4,14 +4,17 @@ using Disaheim;
 namespace DisaheimTest
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest2
     {
         Book b1, b2, b3;
         Amulet a1, a2, a3;
+        Utility utility;
 
         [TestInitialize]
         public void Init()
         {
+            // Arrange
+
             b1 = new Book("1");
             b2 = new Book("2", "Falling in Love with Yourself");
             b3 = new Book("3", "Spirits in the Night", 123.55);
@@ -20,40 +23,47 @@ namespace DisaheimTest
             a1 = new Amulet("11", Level.medium);
             a2 = new Amulet("12", Level.high);
             a3 = new Amulet("13", Level.low, "Capricorn");
+
+            utility = new Utility();
         }
 
         [TestMethod]
-        public void BookConstructorWithOneParameter()
+        public void TestGetValueForBook1()
         {
-            Assert.AreEqual("ItemId: 1, Title: , Price: 0", b1.ToString());
+            // Assert
+            Assert.AreEqual(0.0, utility.GetValueOfBook(b1));
         }
         [TestMethod]
-        public void BookConstructorWithTwoParameters()
+        public void TestGetValueForBook2()
         {
-            Assert.AreEqual("ItemId: 2, Title: Falling in Love with Yourself, Price: 0", b2.ToString());
+            // Assert
+            Assert.AreEqual(0.0, utility.GetValueOfBook(b2));
         }
         [TestMethod]
-        public void BookConstructorWithThreeParameters()
+        public void TestGetValueForBook3()
         {
-            Assert.AreEqual("ItemId: 3, Title: Spirits in the Night, Price: 123,55", b3.ToString());
+            // Assert
+            Assert.AreEqual(123.55, utility.GetValueOfBook(b3));
         }
 
         [TestMethod]
-        public void AmuletConstructorWithOneParameter()
+        public void TestGetValueForAmulet1()
         {
-            Assert.AreEqual("ItemId: 11, Quality: medium, Design: ", a1.ToString());
+            // Assert
+            Assert.AreEqual(20.0, utility.GetValueOfAmulet(a1));
         }
         [TestMethod]
-        public void AmuletConstructorWithTwoParameters()
+        public void TestGetValueForAmulet2()
         {
-            Assert.AreEqual("ItemId: 12, Quality: high, Design: ", a2.ToString());
+            // Assert
+            Assert.AreEqual(27.5, utility.GetValueOfAmulet(a2));
         }
         [TestMethod]
-        public void AmuletConstructorWithThreeParameters()
+        public void TestGetValueForAmulet3()
         {
-            Assert.AreEqual("ItemId: 13, Quality: low, Design: Capricorn", a3.ToString());
+            // Assert
+            Assert.AreEqual(12.5, utility.GetValueOfAmulet(a3));
         }
     }
-
 
 }
