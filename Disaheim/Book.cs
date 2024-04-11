@@ -32,25 +32,25 @@ namespace Disaheim
 
         public override string ToString()
         {
-            return null;
+            return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";
         }
 
         public Book(string itemId)
         {
-            _itemId = ItemId;
+            ItemId = itemId;
         }
 
         public Book(string itemId, string title)
         {
-            _itemId = itemId;
-            _title = title;
+            ItemId = itemId;
+            Title = title;
         }
 
         public Book(string itemId, string title, double price) 
         {
-            _itemId = itemId;
-            _title = title;
-            _price = price;
+            ItemId = itemId;
+            Title = title;
+            Price = price;
         }
 
 

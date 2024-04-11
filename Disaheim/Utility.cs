@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public enum Level
+    public class Utility
     {
-        low,
-        medium,
-        high
-    }
-        public class Enum
+        public double GetValueOfBook(Book book,)
         {
 
         }
+        public double GetvalueOfAmulet(Amulet,  Amulet)
+        {
+
+        }
+    }
 }

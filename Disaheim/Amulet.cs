@@ -33,27 +33,27 @@ namespace Disaheim
         // Default constructor with one parameter.
         public Amulet(string itemId)
         {
-            this.ItemId = itemId;
+            ItemId = itemId;
         }
 
         // Constructor overload with two parameters.
         public Amulet(string itemId, Level quality)
         {
-            this._itemId = itemId;
-            this._design = quality.ToString();
+            ItemId = itemId;
+            Quality = quality;
         }
 
         // Constructor overload number two with three parameters.
         public Amulet(string itemId, Level quality, string design)
         {
-            this.ItemId= itemId;
-            //this._design = quality.ToString(); ?
-            this._design = design;  
+            ItemId= itemId;
+            Quality = quality;
+            Design = design;  
         }
 
         public override string ToString()
         {
-            return null;
+            return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
         }
 
 
