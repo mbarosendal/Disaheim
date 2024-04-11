@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
         private string _itemId;
         private string _design;
@@ -31,27 +31,27 @@ namespace Disaheim
         }
 
         // Default constructor with one parameter.
-        public Amulet(string itemId)
+        public Amulet(string itemId) : base (itemId)
         {
             ItemId = itemId;
         }
 
         // Constructor overload with two parameters.
-        public Amulet(string itemId, Level quality)
+        public Amulet(string itemId, Level quality) : base (itemId)
         {
             ItemId = itemId;
             Quality = quality;
         }
 
         // Constructor overload number two with three parameters.
-        public Amulet(string itemId, Level quality, string design)
+        public Amulet(string itemId, Level quality, string design) : base (itemId)
         {
             ItemId= itemId;
             Quality = quality;
             Design = design;  
         }
 
-        public override string ToString()
+        public virtual string ToString()
         {
             return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
         }
