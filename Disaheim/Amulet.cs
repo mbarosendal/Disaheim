@@ -31,20 +31,20 @@ namespace Disaheim
         }
 
         // Default constructor with one parameter.
-        public Amulet(string itemId) : base (itemId)
+        public Amulet(string itemId)/* : base ()*/
         {
             ItemId = itemId;
         }
 
         // Constructor overload with two parameters.
-        public Amulet(string itemId, Level quality) : base (itemId)
+        public Amulet(string itemId, Level quality)/* : base ()*/
         {
             ItemId = itemId;
             Quality = quality;
         }
 
         // Constructor overload number two with three parameters.
-        public Amulet(string itemId, Level quality, string design) : base (itemId)
+        public Amulet(string itemId, Level quality, string design)/* : base ()*/
         {
             ItemId= itemId;
             Quality = quality;
@@ -55,9 +55,5 @@ namespace Disaheim
         {
             return $"ItemId: {ItemId}, Quality: {Quality}, Design: {Design}";
         }
-
-
-
-
     }
 }

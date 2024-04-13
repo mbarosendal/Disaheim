@@ -35,18 +35,18 @@ namespace Disaheim
             return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";
         }
 
-        public Book(string itemId) : base (itemId)
+        public Book(string itemId)/* : base ()*/
         {
             ItemId = itemId;
         }
 
-        public Book(string itemId, string title) : base (itemId)
+        public Book(string itemId, string title)/* : base ()*/
         {
             ItemId = itemId;
             Title = title;
         }
 
-        public Book(string itemId, string title, double price) : base (itemId)
+        public Book(string itemId, string title, double price)/* : base ()*/
         {
             ItemId = itemId;
             Title = title;
