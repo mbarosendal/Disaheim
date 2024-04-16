@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Utility
+    public class UtilityTwo
     {
         public double GetValueOfBook(Book book)
         {

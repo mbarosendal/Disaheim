@@ -27,7 +27,5 @@ namespace Disaheim
             return $"Name: {Name}, Duration in Minutes: {DurationInMinutes}";
         }
 
-
-
     }
 }
