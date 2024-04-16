@@ -5,7 +5,7 @@ namespace Disaheim
     {
         static void Main(string[] args)
         {
-            ////Book book1 = new Book("1", "Børsen Brænder", 200.95);
+            //Book book1 = new Book("1", "Børsen Brænder", 200.95);
             //Book book1 = new Book("1");
             //bookRepository.AddBook(book1);
             //Book book = bookRepository.GetBook("1");
