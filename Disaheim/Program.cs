@@ -5,6 +5,7 @@ namespace Disaheim
     {
         static void Main(string[] args)
         {
+            // A CHANGE FOR GITHUB
             ////Book book1 = new Book("1", "Børsen Brænder", 200.95);
             //Book book1 = new Book("1");
             //bookRepository.AddBook(book1);
