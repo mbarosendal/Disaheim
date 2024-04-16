@@ -8,15 +8,8 @@ namespace Disaheim
 {
     public class Amulet : Merchandise
     {
-        private string _itemId;
         private string _design;
         private Level _quality;
-
-        public string ItemId
-        {
-            get { return _itemId; }
-            set { _itemId = value; }
-        }
 
         public string Design
         {
@@ -30,25 +23,25 @@ namespace Disaheim
             set { _quality = value; }
         }
 
-        // Default constructor with one parameter.
-        public Amulet(string itemId)/* : base ()*/
+        // Constructor with itemId parameter
+        public Amulet(string itemId)
         {
-            ItemId = itemId;
+            ItemId = itemId; // Accessing ItemId property from Merchandise class
         }
 
-        // Constructor overload with two parameters.
-        public Amulet(string itemId, Level quality)/* : base ()*/
+        // Constructor with itemId and quality parameters
+        public Amulet(string itemId, Level quality)
         {
-            ItemId = itemId;
+            ItemId = itemId; // Accessing ItemId property from Merchandise class
             Quality = quality;
         }
 
-        // Constructor overload number two with three parameters.
-        public Amulet(string itemId, Level quality, string design)/* : base ()*/
+        // Constructor with itemId, quality, and design parameters
+        public Amulet(string itemId, Level quality, string design)
         {
-            ItemId= itemId;
+            ItemId = itemId; // Accessing ItemId property from Merchandise class
             Quality = quality;
-            Design = design;  
+            Design = design;
         }
 
         public virtual string ToString()

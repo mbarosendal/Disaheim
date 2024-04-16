@@ -3,7 +3,6 @@ using Disaheim;
 
 namespace DisaheimTest
 {
-
     [TestClass]
     public class UnitTest3
     {
@@ -68,7 +67,4 @@ namespace DisaheimTest
             Assert.AreEqual(c3, controller.Courses[2]);
         }
     }
-
-
-
 }

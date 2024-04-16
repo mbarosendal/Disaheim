@@ -8,15 +8,8 @@ namespace Disaheim
 {
     public class Book : Merchandise
     {
-        private string _itemId;
         private string _title;
         private double _price;
-
-        public string ItemId
-        {
-            get { return _itemId; }
-            set { _itemId = value; }
-        }
 
         public string Title
         {
@@ -30,25 +23,26 @@ namespace Disaheim
             set { _price = value; }
         }
 
-        public virtual string ToString()
+        public override string ToString()
         {
             return $"ItemId: {ItemId}, Title: {Title}, Price: {Price}";
         }
 
-        public Book(string itemId)/* : base ()*/
+        public Book(string itemId)
         {
-            ItemId = itemId;
+            ItemId = itemId; // Accessing ItemId property from Merchandise class 
         }
 
-        public Book(string itemId, string title)/* : base ()*/
+        // Constructor with itemId and title parameters
+        public Book(string itemId, string title)
         {
-            ItemId = itemId;
+            ItemId = itemId; // Accessing ItemId property from Merchandise class
             Title = title;
         }
 
-        public Book(string itemId, string title, double price)/* : base ()*/
+        public Book(string itemId, string title, double price)
         {
-            ItemId = itemId;
+            ItemId = itemId; // Accessing ItemId property from Merchandise class
             Title = title;
             Price = price;
         }

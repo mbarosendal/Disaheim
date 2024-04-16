@@ -8,9 +8,9 @@ namespace Disaheim
 {
     public class Controller
     {
-        public List<Book> Books;
         public List<Amulet> Amulets;
         public List<Course> Courses;
+        public List<Book> Books;
 
         public void AddToList(Book book)
         {
